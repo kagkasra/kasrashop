@@ -63,6 +63,7 @@ main {
 
 .product img {
   max-width: 100%;
+  height: auto; /* اضافه کردن این ویژگی برای حفظ تناسب */
   border-radius: 5px;
 }
 
@@ -105,10 +106,20 @@ form button {
   .product {
     width: calc(50% - 20px); /* هر محصول در موبایل 50% عرض دارد */
   }
+
+  .product img {
+    max-width: 100%;
+    height: auto; /* حفظ تناسب عکس‌ها در موبایل */
+  }
 }
 
 @media (max-width: 480px) {
   .product {
     width: 100%; /* هر محصول در موبایل کوچک تمام عرض را می‌گیرد */
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto; /* حفظ تناسب عکس‌ها در موبایل کوچک */
   }
 }
