@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* فاصله بین محصولات */
+  justify-content: flex-start; /* محصولات را از سمت چپ مرتب می‌کند */
+}
+
+.product {
+  width: calc(25% - 20px); /* عرض هر محصول 25% از والد به‌علاوه فاصله */
+  max-width: 300px; /* حداکثر عرض برای محصولات */
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px); /* هر محصول در موبایل 50% عرض دارد */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%; /* هر محصول در موبایل کوچک تمام عرض را می‌گیرد */
+  }
+}
